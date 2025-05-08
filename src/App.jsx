@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';;
 import LayoutComponent from './component/layout';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

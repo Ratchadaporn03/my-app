@@ -2,8 +2,9 @@ import React from 'react';
 
 function FooterComponent() {
   return (
-    <footer className="bg-white text-center py-1 rounded-md shadow">
-      <h2 className="text-black">Dashboard</h2>
+
+    <footer className="bg-white py-2 mt-10 my-2 rounded-md shadow">
+      <h2 className="text-black px-2">Dashboard</h2>
     </footer>
   );
 }

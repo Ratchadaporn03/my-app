@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars } from "react-icons/fa";
+import FooterComponent from './FooterComponent';
 
 function HeaderComponent() {
-  const [toggle, setToggle] = useState(true); // true = sidebar open
+  const [toggle, setToggle] = useState(true);
 
   const updateToggle = () => {
     setToggle(!toggle);
@@ -13,14 +14,14 @@ function HeaderComponent() {
 
       
       {toggle && (
-        <div className="w-64 bg-[#05468f] p-4 text-white min-h-screen">
+        <div className="w-64 bg-[#333366] p-4 text-white min-h-screen">
           <form className="mb-4">
             <input 
               type="text" 
               name="query" 
               id="search" 
               placeholder="Search"
-              className="bg-white/150 text-white px-4 py-2 rounded-md w-full"
+              className="bg-white/150 text-[#696969] px-4 py-2 rounded-md w-full"
             />
           </form>
 
@@ -51,7 +52,7 @@ function HeaderComponent() {
           </button>
         )}
 
-        
+        <FooterComponent />
       </div>
     </div>
   );
